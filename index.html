@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <head>? <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<style>
+    @import url('https://fonts.cdnfonts.com/css/georgia-2');
+    @import url('https://fonts.cdnfonts.com/css/palatino-lt-black');
+    @import url('https://fonts.cdnfonts.com/css/antiqua-2');
+
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap');
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+
+
+    table.main {
+        padding: 1.5% 0 1% 0;
+        margin: 0 auto;
+        width: calc(100%);
+        max-width: 768px;
+        background-color: #1B1109;
+        border: 0;
+    }
+
+    .main_wrapper {
+        width: 100%;
+    }
+
+    .body {
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 40px;
+
+    }
+
+    .body::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .banner {
+        position: relative;
+        float: left;
+        width: 45%;
+        padding-right: 20px;
+        height: 100%;
+
+    }
+
+    .banner img {
+        width: 100%;
+
+    }
+
+    /* .content {
+        position: relative;
+        float: right;
+        width: 50%;
+        padding: 0 20px;
+    } */
+
+    .header_area {
+        background-color: #746D69;
+        padding: 10px;
+    }
+
+    .header_area img {
+        max-width: 110px;
+        margin: 0 auto;
+        display: block;
+        border: 4px solid black;
+    }
+
+    .increase {
+        font-size: 25px;
+        color: #ffffff;
+        line-height: 45px;
+        margin-top: 8px;
+        letter-spacing: 5px;
+        text-align: center;
+        font-weight: 300;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    .p-card-main {
+        background-image: url(https://elspoint.com/projects/Email-Template-REFERRAL-POSTER/File/income.png);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: 98% auto;
+        /* max-height: 168px; */
+        height: 229px;
+        padding-top: 0px;
+        width: 415px;
+    }
+
+    .p-card {
+        text-align: center;
+
+    }
+
+    h2,
+    h4,
+    p,
+    h1,
+    h5,
+    h6,
+    h3,
+    a {
+        color: #ffffff;
+
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .income {
+        position: absolute;
+        color: #fff;
+        font-size: 110px;
+        margin-top: -134px;
+        transform: rotate(-8deg);
+        font-weight: 200;
+        font-family: Arial, 'sans-serif';
+    }
+
+    .amount {
+    font-size: 4.3em;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+    .p-card h6 {
+    font-size: 1.1em;
+}
+
+    .p-card p {
+    font-size: 0.85em;
+}
+
+
+    .dots {
+        padding: 3px 0;
+    }
+
+    .dots img {
+        width: 100%;
+    }
+
+    .commercial {
+        font-size: 28px;
+        color: #fff;
+        line-height: 33px;
+    }
+
+    .referral {
+        font-size: 45px;
+        color: #ffffff;
+        line-height: 54px;
+        text-align: center;
+        letter-spacing: 4px;
+    }
+
+    .list {
+        padding-left: 25px;
+    }
+
+    ol li {
+        text-align: left;
+        color: #ffffff;
+        font-family: Arial, sans-serif;
+        margin-left: 15px;
+        line-height: 20px;
+        font-size: 16px;
+    }
+
+    .describ {
+        padding: 3px 0;
+    }
+
+    .describ p {
+        font-size: 1em;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        line-height: 19px;
+        text-align: justify;
+        width: 90%;
+    }
+
+    .icon {
+
+        text-align: left;
+    }
+
+    .icon img {
+        width: 15%;
+    }
+
+    .author_area {
+        text-align: left;
+    }
+
+    .title h2 {
+        font-size: 40px;
+    }
+
+    .author_area .img-area img {
+        width: 100%;
+    }
+
+    .author_area .img-area h2 {
+        line-height: 40px;
+        font-size: 20px;
+    }
+
+    .item p {
+        font-family: 'Lato', sans-serif;
+    }
+
+    .footer_are {
+        margin-top: 5px;
+        background-color: gray;
+        padding: 3px 0;
+    }
+
+    .footer_are table {
+        width: 100%;
+    }
+
+    .footer_are .text h2 {
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .f-logo {
+        text-align: center;
+    }
+
+    .f-logo img {
+        width: 64px;
+    }
+    @media screen and (max-device-width: 360px),
+screen and (max-width: 360px)     {
+    .card_first_tr{
+    height: 45% !important;
+}
+    .amount {
+        font-size: 3.2em;
+        color: #fff;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+
+    .p-card h6 {
+        font-size: 1em;
+    }
+
+    .p-card p {
+        font-size: 0.8em;
+    }
+}
+
+</style>
+
+<body>
+    <div class="main_wrapper">
+
+
+        <table class="main" border="0" cellpadding="0" cellspacing="0" align="center" width="600">
+            <tr>
+                <td class="main_table_first_td"
+                    style="width:40%; text-align: left; font-size: 0; background:url('https://elspoint.com/projects/Email-Template-REFERRAL-POSTER/File/banner-img.jpg') no-repeat left; background-size: 97% auto;">
+                    <div style="width: 100%!important;"></div>
+                </td>
+                <td style="width:60%; text-align: left; padding: 0 3%;">
+
+                    <div class="content">
+                        <div class="header_area">
+                            <div class="logo_ara">
+                                <img src="https://elspoint.com/projects/Email-Template-REFERRAL-POSTER/File/FullSizeRender.jpeg"
+                                    alt="">
+                            </div>
+                        </div>
+                        <h3 class="increase">increase your</h3>
+                        <div class="p-card-main">
+                            <table style="width: calc(100%); height: 100%; margin: 0 auto; text-align: center;"
+                                border="0" align="center" cellpadding="0" cellspacing="0">
+                                <tr style="height: 38%;" class="card_first_tr">
+                                    <td style="width: 100%;">
+                                        <div style="height: 100%;"></div>
+                                    </td>
+                                </tr>
+                                <tr style="height:80%;">
+                                    <td style="width: 100%; text-align: center;">
+                                        <div class="p-card"
+                                            style="height: 100%;  text-align: center; margin: 0 auto; padding-left: 10px;">
+
+                                            <!-- <h2 class="income">Income</h2> -->
+                                            <h2 class="amount"><span
+                                                    style="font-family: 'Georgia', sans-serif; text-align: center;">$</span>
+                                                <span style="font-family: 'Palatino LT Black', sans-serif;">15K</span>
+                                            </h2>
+                                            <h6
+                                                style="font-family: 'Book Antiqua', sans-serif; font-weight:500;  text-align: center;">
+                                                FOR ABOUT 15 MINUTES OF YOUR TIME</h6>
+                                            <p style="font-family: 'Book Antiqua', sans-serif;  text-align: center;">
+                                                *based on a $2MM sale at 3% fee x 25% referral fee*</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                        </div>
+
+                        <div class="dots">
+                            <img src="https://elspoint.com/projects/Email-Template-REFERRAL-POSTER/File/Dotter.png"
+                                alt="">
+                        </div>
+                        <div class="details">
+                            <div class="headings">
+                                <h5 class="commercial"
+                                    style="font-family: 'Book Antiqua', sans-serif; font-weight:500; text-align: center;">
+                                    COMMERCIAL REAL ESTATE</h5>
+                                <h1 class="referral"
+                                    style="font-family: 'Book Antiqua', sans-serif; font-weight:500; text-align: center;">
+                                    REFERRAL</h1>
+                            </div>
+                            <div class="list">
+                                <ol>
+                                    <li>Have you sold homes to Executives?</li>
+                                    <li>Have you sold to Investors?</li>
+                                    <li>Have you sold to High Net Worth Individuals?</li>
+                                </ol>
+                            </div>
+                            <div class="describ">
+                                <p>These are <span style="color: red;">commercial clients</span> currently <span
+                                        style="color: red;">leasing or buying</span> commercial properties from
+                                    our
+                                    competition. Refer them to <span style="color: red;">The C.R.E. Team</span> and
+                                    Unlock Hidden Value in your Database!
+                                </p>
+                            </div>
+                            <div class="dots">
+                                <img src="https://elspoint.com/projects/Email-Template-REFERRAL-POSTER/File/Dotter.png"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="author_area">
+                            <div class="icon"><img
+                                    src="https://elspoint.com/projects/Email-Template-REFERRAL-POSTER/File/icon.png"
+                                    alt=""></div>
+                            <div class="title">
+                                <h2 style=" font-family: 'Lato', sans-serif;">DAN MORGAN</h2>
+                            </div>
+                            <div class="box">
+                                <table border="0" cellpadding="0" cellspacing="0" align="center" valign="top">
+                                    <tr>
+                                        <td style="width: 15%;">
+                                            <div class="img-area"><img
+                                                    src="https://elspoint.com/projects/Email-Template-REFERRAL-POSTER/File/1568391091618.jpeg"
+                                                    alt="">
+                                                <h2>@CRE_Team</h2>
+                                            </div>
+                                        </td>
+                                        <td style="width: 85%;">
+                                            <div class="text-area" style="padding-left: 8px;">
+                                                <div class="item">
+                                                    <h5>COMMERCIAL AGENT</h5>
+                                                </div>
+                                                <div class="item">
+                                                    <p><a
+                                                            href="mailto:dan.morgan@kwcommercial.com">dan.morgan@kwcommercial.com</a>
+                                                    </p>
+                                                </div>
+                                                <div class="item">
+                                                    <p><a href="tel:8179447755">(817) 944-7755</a></p>
+                                                </div>
+                                                <div class="item">
+                                                    <p>KK Central 75</p>
+                                                </div>
+                                                <div class="item">
+                                                    <p>501 President George Bush Turnpike, Suite 125</p>
+                                                </div>
+                                                <div class="item">
+                                                    <p>Richardson, TX 75080</p>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="www.thecreteam.net"
+                                                        style="color: red;">www.thecreteam.net</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+
+
+                            </div>
+                        </div>
+                        <div class="footer_are">
+                            <table>
+                                <tr>
+                                    <td style="width: 50%;">
+                                        <div class="text">
+                                            <h2
+                                                style=" font-family: 'Lato', sans-serif; color: #000; font-weight: 500;">
+                                                POWERED BY:</h2>
+                                        </div>
+                                    </td>
+                                    <td style="width: 50%;">
+                                        <div class="f-logo">
+                                            <img src="https://elspoint.com/projects/Email-Template-REFERRAL-POSTER/File/small-logo.png"
+                                                alt="">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+
+
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+
+
+    </div>
+</body>
+
+</html>
