@@ -3,15 +3,17 @@
     xmlns:o="urn:schemas-microsoft-com:office:office">
 
 <head>
-    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" /> <!-- utf-8 works for most cases -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Forcing initial-scale shouldn't be necessary -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
     <meta name="x-apple-disable-message-reformatting"> <!-- Disable auto-scale in iOS 10 Mail entirely -->
     <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- CSS Reset : BEGIN -->
     <style>
         html,
@@ -143,10 +145,10 @@
             font-family: Arial, Helvetica, sans-serif; */
         }
 
-        .usef-padding1 {
+        /* .usef-padding1 {
             display: block;
             padding-top: 29px;
-        }
+        } */
 
 
         .card {
@@ -162,45 +164,9 @@
         @media screen and (min-device-width: 600px),
         screen and (min-width: 600px) {
 
-            .usef-padding1 {
-
-                padding-top: 40px !important;
+            .biglogo{
+                width: 80px!important;
             }
-
-
-        }
-
-        @media screen and (max-device-width: 599px),
-        screen and (max-width: 599px) {
-
-            .usef-padding1 {
-
-                padding-top: 58px !important;
-            }
-
-            .dollaramount {}
-
-            .increase-text {
-                font-size: 14px !important;
-                letter-spacing: 5px !important;
-                margin-top: 15px !important;
-
-            }
-
-            .duration {}
-
-            .subtitle {
-                font-size: 12px;
-            }
-
-
-
-        }
-
-        @media screen and (max-device-width: 550px),
-        screen and (max-width: 550px) {
-
-
             .usef-padding1 {
 
                 padding-top: 53px !important;
@@ -225,18 +191,120 @@
                 font-size: 12px !important;
             }
 
+            .subtitle {
+    font-size: 10px!important;
+}
+            .commercial-text {
+    font-size: 19px !important;
+    line-height: 18px !important;
+}
+
+.referral-text {
+    font-size: 27px !important;
+    line-height: 38px !important;
+}
+
+.list-item {
+    font-size: 13px !important;
+    padding-left: 14px !important;
+}
+.describ-text {
+    font-size: 16px !important;
+    margin: 6px 0 !important;
+}
+
+.name {
+    font-size: 28px !important;
+}
+            .text-area {
+    font-size: 13px !important;
+}
+
+.footer-text {
+    font-size: 11px !important;
+}
+
+            .cre_team {
+    font-size: 16px !important;
+}
+
+
+
+        }
+
+        @media screen and (max-device-width: 599px),
+        screen and (max-width: 599px) {
+            .increase-text {
+                font-size: 14px !important;
+                letter-spacing: 5px !important;
+                margin-top: 15px !important;
+
+            }
+
+            /* .usef-padding1 {
+
+                padding-top: 58px !important;
+            } */
+
+            /* .dollaramount {
+                margin: 0;
+                line-height: 59px;
+                font-size: 55px;
+                color: #fff;
+                font-weight: 700;
+            }
+
+
+
+            .duration {}
+
+            .subtitle {
+                font-size: 12px!important;
+            } */
+
+
+
+        }
+
+        @media screen and (max-device-width: 550px),
+        screen and (max-width: 550px) {
+
+            .increase-text {
+                font-size: 10px !important;
+                letter-spacing: 4px !important;
+                margin-top: 9px !important;
+            }
+
+            /* .usef-padding1 {
+
+                padding-top: 53px !important;
+            } */
+
+            /* .card {
+                height: 164px !important;
+            }
+
+
+            .dollaramount {
+                line-height: 53px !important;
+                font-size: 45px !important;
+            }
+
+            .duration {
+                font-size: 12px !important;
+            } */
 
         }
 
         @media screen and (max-device-width: 480px),
         screen and (max-width: 480px) {
 
-            .usef-padding1 {
+            /* .usef-padding1 {
 
                 padding-top: 35px !important;
-            }
+            } */
 
-            .card {
+            /* .card {
                 height: 139px !important;
             }
 
@@ -251,51 +319,101 @@
 
             .duration {
                 font-size: 11px !important;
-            }
+            } */
 
         }
 
         @media screen and (max-device-width: 432px),
         screen and (max-width: 432px) {
 
-            .usef-padding1 {
+            /* .usef-padding1 {
 
-                padding-top: 31px !important;
-            }
+                padding-top: 15px !important;
+            } */
 
+            /* 
             .card {
                 height: 113px !important;
+            } */
+
+
+
+            /* .dollaramount {
+                line-height: 18px !important;
+                font-size: 12px !important; 
+            }
+
+            
+
+            .subtitle {
+                font-size: 0.2px !important;
+            } */
+
+
+
+            /* .card {
+                height: 110px !important;
             }
 
             .dollaramount {
-                line-height: 44px !important;
-                font-size: 38px !important;
+                line-height: 24px !important;
+                font-size: 18px !important;
             }
 
             .duration {
-                font-size: 9px !important;
+                font-size: 7px !important;
             }
 
             .subtitle {
-                font-size: 7.2px !important;
+                font-size: 4.5px !important;
+            }  */
+            /* .duration {
+                font-size: 2% !important; 
             }
-
+            .subtitle {
+                font-size: 1% !important;
+            } */
             .commercial-text {
                 font-size: 6px !important;
                 line-height: 6px !important;
             }
 
             .referral-text {
-    font-size: 15px !important;
-    line-height: 24px !important;
-}
+                font-size: 15px !important;
+                line-height: 24px !important;
+            }
 
+            .list-item {
+                font-size: 8px !important;
+                padding-left: 10px !important;
+            }
+
+            .describ-text {
+                font-size: 8px !important;
+                margin: 2px 0 !important;
+            }
+
+            .name {
+                font-size: 13px !important;
+            }
+
+            .text-area {
+                font-size: 8px !important;
+            }
+
+            .footer-text {
+                font-size: 8px !important;
+            }
+
+            .cre_team {
+                font-size: 6px !important;
+            }
         }
 
         @media screen and (max-device-width: 350px),
         screen and (max-width: 350px) {
 
-            .usef-padding1 {
+            /* .usef-padding1 {
                 padding-top: 44px !important;
             }
 
@@ -314,7 +432,7 @@
 
             .subtitle {
                 font-size: 5.5px !important;
-            }
+            } */
 
 
         }
@@ -326,14 +444,14 @@
         screen and (max-width: 280px) {
 
 
-            .usef-padding1 {
+            /* .usef-padding1 {
 
                 padding-top: 4px !important;
-            }
+            } */
 
-            .card {
+            /* .card {
                 height: 78px !important;
-            }
+            } */
 
             .increase-text {
                 font-size: 9px !important;
@@ -341,7 +459,7 @@
                 margin-top: 9px !important;
             }
 
-            .dollaramount {
+            /* .dollaramount {
                 line-height: 13px !important;
                 font-size: 19px !important;
             }
@@ -352,13 +470,31 @@
 
             .subtitle {
                 font-size: 4.5px !important;
+            } */
+
+        }
+
+        @media screen and (max-device-width: 250px),
+        screen and (max-width: 250px) {
+
+            /* .usef-padding1 {
+                padding-top: 24px !important;
             }
+
+            .dollaramount {
+                line-height: 13px !important;
+                font-size: 16px !important;
+            }
+
+            .card {
+                height: 72px !important;
+            } */
 
         }
 
         @media screen and (max-device-width: 240px),
         screen and (max-width: 240px) {
-
+            /* 
             .card {
                 height: 70px !important;
             }
@@ -373,11 +509,38 @@
 
             .subtitle {
                 font-size: 3.5px !important;
-            }
+            } */
         }
 
         @media screen and (max-device-width: 200px),
-        screen and (max-width: 200px) {}
+        screen and (max-width: 200px) {
+            .increase-text {
+                font-size: 6px !important;
+
+                margin-top: 12px !important;
+            }
+
+            /* .card {
+                height: 55px !important;
+            }
+
+            .usef-padding1 {
+                padding-top: 20px !important;
+            }
+
+            .dollaramount {
+                line-height: 13px !important;
+                font-size: 13px !important;
+            }
+
+            .duration {
+                font-size: 3.8px !important;
+            }
+
+            .subtitle {
+                font-size: 2.8px !important;
+            } */
+        }
     </style>
 
 </head>
@@ -404,14 +567,14 @@
                         </a>
                     </td>
                     <td width="60%" valign="top"
-                        style="text-align: right; border-left: 1px solid #fff;  padding: 20px 15px">
+                        style="text-align: right;  padding: 20px 15px">
                         <table align="center" valign="top" role="presentation" cellspacing="0" cellpadding="0"
                             border="0" width="100%" style="margin: auto;" class="bg-elspoint-gray">
                             <tr>
                                 <td width="100%" valign="top" style="text-align: left; padding: 10px 0;">
                                     <a href="#" style="text-align: center;">
-                                        <img src="https://elspoint.com/projects/Email-Template-REFERRAL-POSTER/File/FullSizeRender.jpeg"
-                                            alt="" style="    width: 70px;
+                                        <img class="biglogo" src="https://elspoint.com/projects/Email-Template-REFERRAL-POSTER/File/FullSizeRender.jpeg"
+                                            alt="" style="    width: 50px;
                                             max-width: 600px;
                                             height: auto;
                                             display: block;
@@ -427,7 +590,7 @@
                             border="0" width="100%" style="margin: auto;" class="">
                             <tr>
                                 <td class="increase" align="center" valign="top" style="text-align: center;">
-                                    <p class="increase-text" style="font-size: 14px;
+                                    <p class="increase-text" style="font-size: 8px;
                                     color: #ffffff;
                                     letter-spacing: 5px;
                                     margin-bottom: 0;
@@ -439,27 +602,27 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td width="100%" valign="middle" class="card" style="height: 187px;">
+                                <td width="100%" valign="middle" class="card" style="height: 100px;">
                                     <table valign="middle" width="100%" style="margin: auto; padding: 0;" border="0">
                                         <tr>
                                             <td class="amount" align="center" style="text-align: center;
                                            ">
-                                                <span class="usef-padding1"></span>
+                                                <span class="usef-padding1" style="padding-top: 31px; display: block;"></span>
 
                                                 <p class="dollaramount" style="    margin: 0;
-                                                line-height: 59px;
-                                                font-size: 55px;
+                                                line-height: 18px;
+                                                font-size: 15px;
                                                 color: #fff;
-                                                font-weight: 700;"><span>$</span><span>15K</span></p>
+                                                font-weight: 700; font-family: 'arial', sans-serif;"><span>$</span><span>15K</span></p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td align="center">
                                                 <p class="duration" style="text-align: center;  margin: 0;
-                                                font-size: 14px;
+                                                font-size: 1px;
                                                color: #fff;
                                                font-weight: 600;
-                                               ">FOR ABOUT 15 MINUTES OF YOUR TIME
+                                               font-family: 'arial', sans-serif;">FOR ABOUT 15 MINUTES OF YOUR TIME
                                                 </p>
                                             </td>
                                         </tr>
@@ -467,9 +630,9 @@
                                             <td align="center" style="text-align: center;
                                             ">
                                                 <p class="subtitle" style=" margin: 0;
-                                                font-size: 12px;
+                                                font-size: 0.8px;
                                                 color: #fff;
-                                                font-weight: 400;">*based on a $2MM sale at 3% fee x 25% referral fee*
+                                                font-weight: 400; font-family: 'Lato', sans-serif;">*based on a $2MM sale at 3% fee x 25% referral fee*
                                                 </p>
                                                 <!-- <span class="usef-padding1"></span> -->
                                             </td>
@@ -488,22 +651,22 @@
                             <tr>
                                 <td valign="top" align="center" style="text-align: center;">
                                     <p class="commercial-text"
-                                        style="font-size: 20px; letter-spacing: 2px; color:#fff; font-weight: 500; line-height: 25px;">
+                                        style="font-size: 6px; letter-spacing: 2px; color:#fff; font-weight: 500; line-height: 6px;">
                                         COMMERCIAL REAL ESTATE</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td  valign="top" align="center" style="text-align: center;">
-                                    <p class="referral-text" style="    font-size: 39px;
+                                <td valign="top" align="center" style="text-align: center;">
+                                    <p class="referral-text" style="    font-size: 25px;
                                    letter-spacing: 4px;
                                    color: #fff;
                                    font-weight: 500;
-                                   line-height: 49px;">REFERRAL</p>
+                                   line-height: 24px;">REFERRAL</p>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="list" valign="top" align="left" style="text-align: left;">
-                                    <ol style="color: #fff;">
+                                    <ol style="color: #fff; font-size: 8px; padding-left: 10px; font-family: 'arial', sans-serif;" class="list-item">
                                         <li>Have you sold homes to Executives?</li>
                                         <li>Have you sold to Investors?</li>
                                         <li>Have you sold to High Net Worth Individuals?</li>
@@ -511,9 +674,9 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="describ" valign="top" align="left" style="text-align: left;">
-                                    <p style="color: #fff; margin: 7px 0;">These are <span
-                                            style="color: red;">commercial clients</span> currently <span
+                                <td valign="top" align="left" style="text-align: left;">
+                                    <p class="describ-text" style="font-family: 'arial', sans-serif; color: #fff; margin: 2px 0; font-size: 8px;">These
+                                        are <span style="color: red;">commercial clients</span> currently <span
                                             style="color: red;">leasing or buying</span> commercial properties from
                                         our
                                         competition. Refer them to <span style="color: red;">The C.R.E. Team</span> and
@@ -538,9 +701,9 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="name" valign="top" align="left" style="text-align: left;">
-                                    <h2 style="color: #fff; margin: 0;">DAN MORGAN
-                                    </h2>
+                                <td valign="top" align="left" style="text-align: left;">
+                                    <p class="name" style="color: #fff; margin: 0; font-size: 13px;">DAN MORGAN
+                                    </p>
                                 </td>
                             </tr>
                             <tr>
@@ -555,37 +718,40 @@
                                                     max-width: 600px;
                                                     height: auto;
                                                     display: block;">
-                                                    <h4 width="100%" style="color: #fff; margin-top:5px;">@CRE_Team</h4>
+                                                    <p class="cre_team" width="100%"
+                                                        style="color: #fff; margin-top:5px; font-size: 6px; font-family: 'arial', sans-serif;">@CRE_Team
+                                                    </p>
                                                 </a>
                                             </td>
                                             <td width="70%" valign="top" style="text-align: left; ">
-                                                <div class="text-area" style="">
-                                                    <div class="item">
-                                                        <h5 style="color: #fff;">COMMERCIAL AGENT</h5>
-                                                    </div>
-                                                    <div class="item">
-                                                        <p style="color: #fff;"><a class="aBn"
-                                                                href="mailto:dan.morgan@kwcommercial.com">dan.morgan@kwcommercial.com</a>
-                                                        </p>
-                                                    </div>
-                                                    <div class="item">
-                                                        <p style="color: #fff;"><a class="aBn"
-                                                                href="tel:8179447755">(817) 944-7755</a></p>
-                                                    </div>
-                                                    <div class="item">
-                                                        <p style="color: #fff;">KK Central 75</p>
-                                                    </div>
-                                                    <div class="item">
-                                                        <p style="color: #fff;">501 President George Bush Turnpike,
-                                                            Suite 125</p>
-                                                    </div>
-                                                    <div class="item">
-                                                        <p style="color: #fff;">Richardson, TX 75080</p>
-                                                    </div>
-                                                    <div class="item" style="color: red;">
+                                                <div style="">
+                                                    <p class="text-area"
+                                                        style="font-family: 'arial', sans-serif; color: #fff; font-size: 8px; padding-left: 3px;">
+                                                        <span>COMMERCIAL AGENT</span>
+
+                                                        <br>
+                                                        <a class="aBn"
+                                                            href="mailto:dan.morgan@kwcommercial.com">dan.morgan@kwcommercial.com</a>
+
+                                                        <br>
+
+                                                        <a class="aBn" href="tel:8179447755">(817)
+                                                            944-7755</a>
+
+                                                        <br>
+                                                        KK Central 75
+
+                                                        <br>
+                                                        501 President George Bush Turnpike,
+                                                        Suite 125
+
+                                                        <br>
+                                                        Richardson, TX 75080
+
+                                                        <br>
                                                         <a href="www.thecreteam.net"
                                                             style="color: red;">www.thecreteam.net</a>
-                                                    </div>
+                                                    </p>
                                                 </div>
                                             </td>
                                         </tr>
@@ -599,9 +765,9 @@
                                         width="100%" style="margin: auto;" class="">
                                         <tr>
                                             <td width="50%" style="text-align: center;">
-                                                <h5
-                                                    style=" font-family: 'Lato', sans-serif; color: #000; font-weight: 500;">
-                                                    POWERED BY:</h5>
+                                                <p class="footer-text"
+                                                    style="font-size: 8px;  font-family: 'Lato', sans-serif; color: #000; font-weight: 500;">
+                                                    POWERED BY:</p>
                                             </td>
                                             <td width="50%" style="text-align: center; ">
 
